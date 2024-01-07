@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {HomePage, ProfileScreen} from "./components/Homepage";
+import {HomePage, ScanNFC} from "./components/Homepage";
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -14,7 +14,7 @@ const App = () => {
               component={HomePage}
               options={{title: 'Welcome'}}
           />
-          <Stack.Screen name="Profile" component={ProfileScreen} />
+          <Stack.Screen name="ScanNFC" component={ScanNFC} />
         </Stack.Navigator>
       </NavigationContainer>
   );
